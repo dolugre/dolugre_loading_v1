@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Loading Screen</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div class="center-content">
+        <h1 id="server-title" class="server-name">YÜKLENİYOR</h1>
+        <p id="server-slogan" class="slogan">Lütfen bekleyin...</p>
+    </div>
+
+    <div class="music-player">
+        <div class="song-info">
+            <span id="song-name">Şarkı Adı</span>
+            <span id="artist-name">Sanatçı</span>
+        </div>
+        <div class="controls">
+            <button id="play-pause">⏸</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            <button id="mute-btn">🔊</button>
+        </div>
+    </div>
+
+    <div class="loading-container">
+        <div class="progress-labels">
+            <span>Sunucu verileri işleniyor...</span>
+            <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-bg">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
